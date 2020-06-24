@@ -1,16 +1,15 @@
-var task = {};
-var task = new Object();
 var task = Object.create(Object.prototype);
-task.title = "Cooking";
-task.desc = "I love cooking";
-task.doTask = function() {
-	return this.title + " is in progress";
-};
 
-function getTask() {
-	return this.title + " : " + this.desc;
-}
+task.title = "Gaming";
+task.desc = "Call Of Duty";
+Object.defineProperty(task, 'getTask', {
+	value: function() {return this.title + " : " + this.desc},
+	enumerable: true,
+	writable: false,
+	configurable: false
+});
 
-console.log(getTask.bind(task).call());
+console.log(task);
 
-console.log(task.doTask());
+var customTask = Object.create(task);
+console.log(customTask);
