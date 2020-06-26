@@ -3,3 +3,5 @@
 #### Constructor Pattern
 
 #### Module Pattern
+
+#### Factory Pattern
