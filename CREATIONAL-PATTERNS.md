@@ -5,3 +5,5 @@
 #### Module Pattern
 
 #### Factory Pattern
+
+#### Singleton Pattern
