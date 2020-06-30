@@ -11,7 +11,7 @@ var Task = function(data) {
 	};
 	
 	this.__proto__.setOwner = function(owner) {
-		console.log("Setting " + this.owner + " as owner for " + this.name);
+		console.log("Setting " + owner + " as owner for " + this.name);
 		this.owner = owner;
 		console.log("Set Owner for " + this.name + " to " + this.owner);
 	};
